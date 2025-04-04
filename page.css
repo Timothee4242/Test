@@ -46,7 +46,7 @@ h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.logo{
+#logo{
     border-radius: 50%;/*70% 30% 70% 30% / 70% 31% 69% 30% ;*/
     width: 100px;
     height: 100px;
@@ -65,6 +65,7 @@ main{
     margin: 0px;
     justify-content: space-between;
     background-image: url("partition_fond.png");
+    background-attachment: fixed;
 }
 
 .box{
@@ -85,6 +86,21 @@ main{
 }
 .euh:hover + .alt{
     display:inline;
+}
+main .four{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+main .four div{
+    margin: 0px;
+}
+.caché{
+    color: #00000000;
+}
+.caché:hover{
+    color: #000000;
+    font-size: 1.6em;
 }
 .imp{
     font-weight: 700;
@@ -111,6 +127,7 @@ main .zero{
 .box img{
     width: 100px;
 }
+
 .box p img{
     width: 200px;
     /*position: relative;*/
@@ -124,6 +141,9 @@ main .zero{
 .droite{
     float: right;
     margin: 0px 0px 0px 10px;
+}
+.grand{
+    min-width: 300px;
 }
 video{
     width: 60%;
@@ -167,5 +187,8 @@ footer a:hover{
         max-width: 100%;
         margin-left: 0px;
         margin-right: 0px;
+    }
+    main .four .c2{
+        display: none;
     }
 }
