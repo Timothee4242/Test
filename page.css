@@ -2,8 +2,8 @@
 body{
     text-align: justify;
     margin: 0px;
-    border-left: 9px #ff0000 solid;
-    background-image: url("partition_fond.png");
+    border-left: 10px #00ffc8 solid;
+    min-height:100%;
 }
 
 header{
@@ -16,6 +16,30 @@ header{
     text-align: center;
     /*position:inherit;*/
 }
+nav,footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    row-gap: 0px;
+    justify-content: space-around;
+    margin:0px;
+    padding: 0px;
+    
+}
+nav a,footer a{
+    color: #000000;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav a:visited,footer a:visited{
+    color: #000000;
+}
+/*nav a[href="#1"]:visited #1{
+    color: red;
+}*/
 h1{
     color: #ffffff;
     font-size: 3em;
@@ -23,7 +47,7 @@ h1{
 }
 
 .logo{
-    border-radius: 70% 30% 70% 30% / 70% 31% 69% 30% ;
+    border-radius: 50%;/*70% 30% 70% 30% / 70% 31% 69% 30% ;*/
     width: 100px;
     height: 100px;
     border: 3px rgb(0, 0, 0) solid;
@@ -38,8 +62,9 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 10px 5px 5px 5px;
+    margin: 0px;
     justify-content: space-between;
+    background-image: url("partition_fond.png");
 }
 
 .box{
@@ -61,7 +86,15 @@ main{
 .euh:hover + .alt{
     display:inline;
 }
-
+.imp{
+    font-weight: 700;
+    font-variant-ligatures: additional-ligatures;
+    /*font-style: italic;*/
+    font-size: 1.1em;
+}
+.italique{
+    font-style: italic;
+}
 h2{
     text-align: center;
     text-shadow: 1px 5px 5px #00000071
@@ -94,6 +127,8 @@ main .zero{
 }
 video{
     width: 60%;
+    max-width: 450px;
+    min-width: 300px;
 }
 .zero img{
     width: 40px;
@@ -106,10 +141,23 @@ audio{
     width: 40%;
     min-width: 220px;
 }
-
+footer{
+    background-color: #000000;
+    margin: 0px;
+    padding: 15px;
+}
+footer p{
+    color:#ffffff;
+}
+footer a:hover{
+    text-decoration: underline;
+}
 @media screen and (max-width: 1024px){
     body{
         border-width: 0px;
+    }
+    h1{
+        font-size: 30px;
     }
     .logo{
         display:none;
@@ -121,8 +169,3 @@ audio{
         margin-right: 0px;
     }
 }
-/*@media screen and (min-width: 1024px){
-    .box{
-        max-width: 47%;
-    }
-}*/
