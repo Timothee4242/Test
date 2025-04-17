@@ -60,6 +60,10 @@ p:active{
     font-weight: 800;
     font-size: 1.2em;
 }
+.nongrossi:active{
+    font-weight: 400;
+    font-size:1em;
+}
 img:hover{
     outline-color: #00000068;
 }
