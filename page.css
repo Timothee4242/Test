@@ -41,14 +41,14 @@ nav a:visited,footer a:visited{
     color: red;
 }*/
 h1{
-    color: #ffc0c0;
+    color: #ffffff;
     font-size: 3em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h1:hover{
     text-shadow: 4px 6px 8px #ffffff9b;
 }
-p{
+p,li{
     -webkit-transition: all 0.1s;
     -moz-transition: all 0.1s;
     -ms-transition: all 0.1s;
@@ -56,7 +56,7 @@ p{
     transition: all 0.1s;
 
 }
-p:active{
+p:active,li:active{
     font-weight: 800;
     font-size: 1.2em;
 }
@@ -95,7 +95,9 @@ p img:hover{
         up: -30px;
     box-shadow: 1px 7px 10px #000000;
 }
-#logo:hover{transform:rotate(360deg);}
+#logo:hover{
+    transform:rotate(360deg);/**/
+}
 
 main{
     display: flex;
@@ -147,6 +149,24 @@ main .four div{
     font-variant-ligatures: additional-ligatures;
     /*font-style: italic;*/
     font-size: 1.1em;
+    -webkit-transition: all 20s;
+    -moz-transition: all 20s;
+    -ms-transition: all 20s;
+    -o-transition: all 20s;
+    transition: all 20s;
+
+
+}
+.imp:hover{
+    font-weight: 600;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', serif;
+    /*font-size: 2em;*/
+}
+.imp:active{
+   /* position: absolute;
+    up:2000px;left:0px;/**/
+    transform: translate(3px);
+    font-size: 100em;
 }
 .italique{
     font-style: italic;
@@ -243,3 +263,22 @@ footer a:hover{
     }
     video{min-width: 280px}
 }
+
+@media print{
+    nav,footer,.nonprint,#logo,video,audio{display:none;}
+    header{background:none;}
+    h1{color:#000000;}
+    h2{text-shadow: none;}
+    main{background-image: none;}
+    .box{background-color: #ffffff;}
+    body{
+        border-width: 0px;
+    }
+    .box{
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}/**/
