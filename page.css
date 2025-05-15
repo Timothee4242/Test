@@ -13,7 +13,7 @@ header{
     background: radial-gradient(circle, rgba(10,0,185,1) 0%, rgba(0,212,255,1) 100%);
     padding: 10px;
     text-align: center;
-    /*position:inherit;*/
+    position:sticky;
 }
 nav,footer{
     display: flex;
@@ -264,13 +264,14 @@ footer a:hover{
     .box{
         width: 100%;
         max-width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 2px;
+        margin-right: 2px;
     }
     main .four .c2{
         display: none;
     }
     video{min-width: 280px}
+    audio{width: 100%}
 }
 
 @media print{
@@ -288,6 +289,9 @@ footer a:hover{
         max-width: 100%;
         margin-left: 0px;
         margin-right: 0px;
+        border-radius:0%;
+        border: none;
+        border-top: 2px #000000 Dashed;
     }
 
 }/**/
