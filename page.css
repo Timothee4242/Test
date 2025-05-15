@@ -135,6 +135,7 @@ main .four div{
 }
 .caché{
     color: #00000000;
+    font-size: 0.8em;
 }
 .caché:hover{
     color: #000000;
