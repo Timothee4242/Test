@@ -6,9 +6,6 @@ body{
 }
 
 header{
- /*   display: flex;
-    flex-direction: row;
-    gap: 100px;*/
     margin: 0px;
     background: radial-gradient(circle, rgba(10,0,185,1) 0%, rgba(0,212,255,1) 100%);
     padding: 10px;
@@ -38,9 +35,6 @@ nav a:hover{
 nav a:visited/*,footer a:visited*/{
     color: #000000;
 }
-/*nav a[href="#1"]:visited #1{
-    color: red;
-}*/
 
 h1{
     color: #ffffff;
@@ -66,12 +60,8 @@ p:active,li:active{
     font-weight: 400;
     font-size:1em;
 }
-/*img:hover{
-    outline-color: #00000068;
-}*/
+
 img{
-   /* width:100%;
-    height:100%;*/
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
@@ -257,7 +247,6 @@ footer a:hover{
         border-width: 0px;
     }
     header{position:relative;}
-    /*nav{position:sticky;}*/
     h1{
         font-size: 30px;
     }
